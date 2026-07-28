@@ -1,0 +1,52 @@
+{
+  "schema": "cutman.capcut-package.v2",
+  "target": {
+    "application": "CapCut",
+    "testedVersion": "8.9.1",
+    "platforms": ["desktop-macos", "desktop-windows", "web"],
+    "integrationMode": "media-srt-package",
+    "directProjectImport": false
+  },
+  "project": {
+    "name": "CutMan CapCut Demo",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationSeconds": 20,
+    "safetyMode": "new-project-only"
+  },
+  "tracks": [
+    {
+      "type": "video",
+      "name": "V1 主畫面",
+      "clips": [
+        { "file": "media/01_establishing.mp4", "start": 0, "duration": 4, "transition": "none" },
+        { "file": "media/02_push_in.mp4", "start": 4, "duration": 4, "transition": "hard-cut" },
+        { "file": "media/03_left_detail.mp4", "start": 8, "duration": 4, "transition": "hard-cut" },
+        { "file": "media/04_right_detail.mp4", "start": 12, "duration": 4, "transition": "hard-cut" },
+        { "file": "media/05_closing_wide.mp4", "start": 16, "duration": 4, "transition": "hard-cut" }
+      ]
+    },
+    {
+      "type": "audio",
+      "name": "A1 音樂",
+      "clips": [
+        { "file": "media/city-bed.wav", "start": 0, "duration": 20, "gainDb": -12 }
+      ]
+    },
+    {
+      "type": "captions",
+      "name": "字幕",
+      "file": "captions.srt",
+      "style": {
+        "position": "bottom-center",
+        "maxLines": 2
+      }
+    }
+  ],
+  "notes": [
+    "CapCut Desktop 沒有官方專案交換 API，此 manifest 是 CutMan 的可驗證操作清單。",
+    "Demo 必須建立新專案，禁止覆寫或修改既有草稿。",
+    "所有時間值以秒為單位，硬切發生在 4、8、12、16 秒。"
+  ]
+}

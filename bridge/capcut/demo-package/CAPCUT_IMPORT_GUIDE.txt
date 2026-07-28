@@ -1,0 +1,17 @@
+CutMan × CapCut Demo 相容套件
+
+測試版本：CapCut Desktop 8.9.1（macOS）
+安全模式：只建立新專案，保留所有原始素材
+
+匯入步驟
+1. 將 ZIP 解壓縮到本機資料夾。
+2. 開啟 CapCut Desktop，選擇「建立專案」。
+3. 匯入 media 資料夾內全部 MP4 與 WAV，依 01～05 檔名前綴排序。
+4. 將五段影片依序加入主時間線，將 city-bed.wav 加到音訊軌。
+5. 到「字幕／Captions」→「新增字幕／Add Captions」匯入 captions.srt。
+6. 依 edit_plan.json 核對 4、8、12、16 秒的硬切與 -12 dB 音訊設定。
+
+限制
+- CapCut 官方不支援第三方專案檔直接匯入，本套件不是 CapCut 草稿檔。
+- 本套件只使用 CapCut 官方支援的媒體與 UTF-8 SRT 匯入方式。
+- 不得修改或覆寫既有 CapCut 草稿。
